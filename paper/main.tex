@@ -1,5 +1,29 @@
 \documentclass[conference]{IEEEtran}
+%\usepackage{enumitem}
+\usepackage{framed}
+\usepackage{listings}
+\usepackage{amstext}
+\usepackage{amstext}
+\usepackage{pdfpages}
+\usepackage{alltt}
+\usepackage{epstopdf}
+\usepackage{xspace,colortbl}
+\usepackage[USenglish]{babel}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{graphicx}%%
+\usepackage{amssymb}
+\usepackage{fmtcount}
+\usepackage{amsfonts}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage[mathscr]{eucal}
 \usepackage{times}
+\usepackage{colortbl}
+\usepackage{bm}
+\usepackage[nospace]{cite}
 
 % numbers option provides compact numerical references in the text. 
 \usepackage[numbers]{natbib}
@@ -15,6 +39,13 @@
 }
 
 \begin{document}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
 
 % paper title
 \title{Template paper for the \\Robotics: Science and Systems Conference}
@@ -69,7 +100,10 @@ TODO
 \end{abstract}
 
 \input{introduction.tex}
-%\input{background.tex}
+\input{background.tex}
+\input{betaprocess.tex}
+\input{results.tex}
+
 %\input{related_work.tex}
 
 \IEEEpeerreviewmaketitle
